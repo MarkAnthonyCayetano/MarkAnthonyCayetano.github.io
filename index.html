@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
+<html lang="en" class="scroll-smooth"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Mark Anthony Cayetano</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         /* Custom scrollbar to match theme */
@@ -65,7 +63,7 @@
                 </div>
                 <h1 class="text-5xl md:text-7xl font-medium text-zinc-100 tracking-tight leading-[1.1]">
                     Crafting digital <br> 
-                    <span class="text-zinc-500">Web, games, & creative work.</span>
+                    <span class="text-zinc-500">Web, games, &amp; creative work.</span>
                 </h1>
                 <p class="text-lg md:text-xl font-light text-zinc-400 max-w-xl leading-relaxed">
                     I’m an IT practitioner who works on front-end and back-end websites, explores game development, and creates 2D pixel art assets.
@@ -99,14 +97,7 @@
                     <!-- Template 1 -->
                     <div class="group relative bg-zinc-900/30 border border-white/5 rounded-xl overflow-hidden hover:border-white/10 transition-all duration-500">
                         <div class="aspect-video bg-zinc-950 relative overflow-hidden flex items-center justify-center group-hover:bg-zinc-900/50 transition-colors">
-                            
-                            <!-- REPLACE SRC WITH YOUR IMAGE -->
-                            <img 
-                                src="https://placehold.co/600x400/18181b/52525b?text=Web+Template+Preview" 
-                                alt="Lumina Dashboard" 
-                                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                            >
-                            
+                            <img src="https://placehold.co/600x400/18181b/52525b?text=Web+Template+Preview" alt="Lumina Dashboard" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500">
                         </div>
                         <div class="p-6">
                             <h3 class="text-lg font-medium text-zinc-100">Lumina Dashboard</h3>
@@ -121,14 +112,7 @@
                     <!-- Template 2 -->
                     <div class="group relative bg-zinc-900/30 border border-white/5 rounded-xl overflow-hidden hover:border-white/10 transition-all duration-500">
                         <div class="aspect-video bg-zinc-950 relative overflow-hidden flex items-center justify-center group-hover:bg-zinc-900/50 transition-colors">
-                            
-                            <!-- REPLACE SRC WITH YOUR IMAGE -->
-                            <img 
-                                src="https://placehold.co/600x400/18181b/52525b?text=Portfolio+Template" 
-                                alt="Kroma Portfolio" 
-                                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                            >
-
+                            <img src="https://placehold.co/600x400/18181b/52525b?text=Portfolio+Template" alt="Kroma Portfolio" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500">
                         </div>
                         <div class="p-6">
                             <h3 class="text-lg font-medium text-zinc-100">Kroma Portfolio</h3>
@@ -147,286 +131,137 @@
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/5 pb-6">
                     <div>
                         <h2 class="text-2xl font-medium text-zinc-100 tracking-tight">2D Pixel Art</h2>
-                        <p class="text-sm text-zinc-500 mt-1">Character sprites, environments, and UI assets.</p>
+                        <p class="text-sm text-zinc-500 mt-1">Character sprites, environments, and UI assets. Click to expand.</p>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                <!-- Added id="pixel-gallery" for JS delegation -->
+                <div id="pixel-gallery" class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
                     <!-- Art Item 1 -->
-                     <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/DabiXTyphlosion.png" 
-                            alt="Dabi(MyHeroAcademia) X Pokemon" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                     <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/DabiXTyphlosion.png" alt="Dabi(MyHeroAcademia) X Pokemon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Dabi(MyHeroAcademia) X Pokemon</span>
                         </div>
                     </div>
 
                     <!-- Art Item 2 (Wide) -->
-                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/AttackOnTitan.png" 
-                            alt="AttackOnTitan" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/AttackOnTitan.png" alt="AttackOnTitan" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Attack On Titan X Pokemon</span>
                         </div>
                     </div>
 
                      <!-- Art Item 3 -->
-                     <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/DabiXThresh.png" 
-                            alt="Thresh X Pokemon" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                     <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/DabiXThresh.png" alt="Thresh X Pokemon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Thresh X Pokemon</span>
                         </div>
                     </div>
-                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/EscanorXPokemon.png" 
-                            alt="Escanor X Pokemon" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/EscanorXPokemon.png" alt="Escanor X Pokemon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Escanor X Pokemon</span>
                         </div>
                     </div>
                 
-                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/King(OnePiece)XPokemon.png" 
-                            alt="King(OnePiece) X Pokemon" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/King(OnePiece)XPokemon.png" alt="King(OnePiece) X Pokemon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">King(OnePiece) X Pokemon</span>
                         </div>
                     </div>
 
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/Kurogiri(MHA) X Gengar.png" 
-                            alt="Kurogiri(MHA) X Gengar" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/Kurogiri(MHA) X Gengar.png" alt="Kurogiri(MHA) X Gengar" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Kurogiri(MHA) X Gengar</span>
                         </div>
                     </div>
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/Marowak.png" 
-                            alt="Marowak Form" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/Marowak.png" alt="Marowak Form" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Alolan Marowak Form</span>
                         </div>
                     </div>
 
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/OkarunXgengar.png" 
-                            alt="Okarun X Gengar" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/OkarunXgengar.png" alt="Okarun X Gengar" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Okarun(Dandadan) X Pokemon</span>
                         </div>
                     </div>
 
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/MyheroAcademia.png" 
-                            alt="MyHeroAcedemia X Pokemon" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/MyheroAcademia.png" alt="MyHeroAcedemia X Pokemon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">MyHeroAcedemia X Pokemon</span>
                         </div>
                     </div>
 
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/RaichuXmas and RaichuVtines.png" 
-                            alt="RaichuXmas and RaichuVtines" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/RaichuXmas and RaichuVtines.png" alt="RaichuXmas and RaichuVtines" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Mega Raichu Forms</span>
                         </div>
                     </div>
 
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/RaichuHlw and Clone.png" 
-                            alt="RaichuHlw and Clone" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/RaichuHlw and Clone.png" alt="RaichuHlw and Clone" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Mega Raichu Forms 2</span>
                         </div>
                     </div>
 
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/StarWars.png" 
-                            alt="Star Wars x Pokemon" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/StarWars.png" alt="Star Wars x Pokemon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Star Wars x Pokemon</span>
                         </div>
                     </div>
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/SummerXpokemon.png" 
-                            alt="Summer Gengar" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/SummerXpokemon.png" alt="Summer Gengar" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Summer Gengar Evolution</span>
                         </div>
                     </div>
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/zangoose Forms.png" 
-                            alt="Zangoose Form" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/zangoose Forms.png" alt="Zangoose Form" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Zangoose Form</span>
                         </div>
                     </div>
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/krookodileXOnePiece.png" 
-                            alt="krookodile X OnePiece" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/krookodileXOnePiece.png" alt="krookodile X OnePiece" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">krookodile X OnePiece</span>
                         </div>
                     </div>
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/pokemon1.png" 
-                            alt="Random Work" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/pokemon1.png" alt="Random Work" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Random Work</span>
                         </div>
                     </div>
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/smoker(onePiece).png" 
-                            alt="smoker(onePiece)" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/smoker(onePiece).png" alt="smoker(onePiece)" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Smoker(OnePiece) X Pokemon</span>
                         </div>
                     </div>
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/whimsicottXbrook(onePiece).png" 
-                            alt="Brook(onePiece)" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/whimsicottXbrook(onePiece).png" alt="Brook(onePiece)" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Brook(OnePiece) X Pokemon</span>
                         </div>
                     </div>
-                <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center">
-                        
-                        <!-- REPLACE SRC WITH YOUR IMAGE -->
-                        <img 
-                            src="images/prev/susanoo.png" 
-                            alt="Susanoo" 
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                            style="image-rendering: pixelated"
-                        >
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                    <div class="group relative col-span-2 rounded-lg bg-zinc-900/50 border border-white/5 overflow-hidden flex items-center justify-center cursor-zoom-in">
+                        <img src="images/prev/susanoo.png" alt="Susanoo" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" style="image-rendering: pixelated">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                             <span class="text-xs font-medium text-white">Susanoo X Pokemon</span>
                         </div>
                     </div>
@@ -448,11 +283,7 @@
                         <div class="relative h-64 lg:h-auto bg-zinc-950 flex items-center justify-center overflow-hidden">
                             
                             <!-- REPLACE SRC WITH YOUR IMAGE -->
-                            <img 
-                                src="https://placehold.co/800x600/18181b/52525b?text=Game+Screenshot" 
-                                alt="Echoes of the Void Gameplay" 
-                                class="absolute inset-0 w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-500"
-                            >
+                            <img src="https://placehold.co/800x600/18181b/52525b?text=Game+Screenshot" alt="Echoes of the Void Gameplay" class="absolute inset-0 w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-500">
                             
                             <!-- Decorative UI Overlay -->
                             <div class="absolute bottom-4 left-4 right-4 flex justify-between pointer-events-none z-10">
@@ -483,7 +314,7 @@
                                         <div class="w-8 h-8 rounded-full bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xs font-bold">ME</div>
                                         <div>
                                             <p class="text-sm text-zinc-200 font-medium">Lead Developer</p>
-                                            <p class="text-xs text-zinc-600">Mechanics & Systems</p>
+                                            <p class="text-xs text-zinc-600">Mechanics &amp; Systems</p>
                                         </div>
                                     </div>
                                     <!-- Collaborator -->
@@ -493,7 +324,7 @@
                                         </div>
                                         <div>
                                             <p class="text-sm text-zinc-300 font-medium">Sarah Jenkins</p>
-                                            <p class="text-xs text-zinc-600">Pixel Art & Sound Design</p>
+                                            <p class="text-xs text-zinc-600">Pixel Art &amp; Sound Design</p>
                                         </div>
                                     </div>
                                 </div>
@@ -558,7 +389,7 @@
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="text-center md:text-left">
                 <p class="text-zinc-100 font-medium text-sm">J.PORTFOLIO</p>
-                <p class="text-zinc-600 text-xs mt-1">Designed & Built with precision.</p>
+                <p class="text-zinc-600 text-xs mt-1">Designed &amp; Built with precision.</p>
             </div>
             <div class="flex items-center gap-6">
                 <a href="#" class="text-zinc-500 hover:text-zinc-300 text-xs transition-colors">Twitter</a>
@@ -569,5 +400,66 @@
         </div>
     </footer>
 
-</body>
-</html>
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 cursor-zoom-out" onclick="closeModal()">
+        <div class="relative max-w-7xl w-full h-full flex flex-col items-center justify-center pointer-events-none">
+            <img id="modalImage" src="" alt="" class="max-h-[85vh] max-w-full w-auto object-contain rounded-sm shadow-2xl border border-white/10 pointer-events-auto" style="image-rendering: pixelated" onclick="event.stopPropagation()">
+            <p id="modalCaption" class="text-zinc-400 mt-4 text-sm font-medium tracking-wide bg-zinc-950/50 px-3 py-1 rounded-full border border-white/5 backdrop-blur-md pointer-events-auto"></p>
+            <button onclick="closeModal()" class="pointer-events-auto absolute top-4 right-0 md:right-4 text-zinc-400 hover:text-white transition-colors bg-zinc-900/50 rounded-full p-2">
+                <iconify-icon icon="solar:close-circle-linear" width="32"></iconify-icon>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Modal Logic
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const modalCaption = document.getElementById('modalCaption');
+        const gallery = document.getElementById('pixel-gallery');
+
+        // Event delegation for gallery items
+        gallery.addEventListener('click', (e) => {
+            const card = e.target.closest('.group');
+            if (card) {
+                const img = card.querySelector('img');
+                const captionText = card.querySelector('span')?.innerText || '';
+                
+                if (img) {
+                    openModal(img.src, captionText);
+                }
+            }
+        });
+
+        function openModal(src, caption) {
+            modalImg.src = src;
+            modalCaption.innerText = caption;
+            
+            modal.classList.remove('hidden');
+            // Small timeout to allow transition
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+            }, 10);
+            
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modalImg.src = ''; // Clear source
+            }, 300); // Match transition duration
+            
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+
+</body></html>
