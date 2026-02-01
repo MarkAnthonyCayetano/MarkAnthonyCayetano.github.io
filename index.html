@@ -459,11 +459,13 @@
             if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
                 closeModal();
             }
-            document.addEventListener('dragstart', (e) => {
+        });
+         // Disable image dragging
+    document.addEventListener('dragstart', (e) => {
         if (e.target.tagName === 'IMG') {
             e.preventDefault();
         }
-        });
+    });
         
     </script>
 
