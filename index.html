@@ -466,6 +466,12 @@
             e.preventDefault();
         }
     });
+        // Disable right-click on images only
+    document.addEventListener('contextmenu', (e) => {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+        }
+    });
         
     </script>
 
