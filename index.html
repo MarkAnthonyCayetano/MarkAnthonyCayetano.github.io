@@ -284,8 +284,11 @@
                             
                             <!-- REPLACE SRC WITH YOUR IMAGE -->
                             <img src="images/gameprev.png"
-     alt="IntoTheWoods"
-     class="absolute inset-0 w-full h-full object-contain bg-black opacity-90 hover:opacity-100 transition-opacity duration-500">
+     alt="Into The Woods"
+     data-caption="Into The Woods – Multiplayer Survival Game"
+     class="absolute inset-0 w-full h-full object-contain bg-black opacity-90 hover:opacity-100 transition-opacity duration-500 cursor-zoom-in game-modal-trigger"
+     style="image-rendering: auto;">
+
 
                             
                             <!-- Decorative UI Overlay -->
@@ -368,9 +371,6 @@
                                     <iconify-icon icon="logos:unity" width="20" class="grayscale opacity-50"></iconify-icon>
                                     <iconify-icon icon="logos:c-sharp" width="20" class="grayscale opacity-50"></iconify-icon>
                                 </div>
-                                <a href="#" class="inline-flex items-center gap-2 text-sm text-white hover:text-indigo-400 transition-colors group">
-                                    View Source <iconify-icon icon="solar:arrow-right-up-linear" width="16" class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></iconify-icon>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -476,6 +476,7 @@
             
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
         }
+        
 
         function closeModal() {
             modal.classList.add('opacity-0');
@@ -486,6 +487,13 @@
             
             document.body.style.overflow = ''; // Restore scrolling
         }
+        document.querySelectorAll('.game-modal-trigger').forEach(img => {
+        img.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openModal(img.src, img.dataset.caption || '');
+        });
+    });
+        
 
         // Close on Escape key
         document.addEventListener('keydown', (e) => {
